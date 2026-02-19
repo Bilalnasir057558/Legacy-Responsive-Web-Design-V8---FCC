@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>
+      Survey Form
+    </title>
+  </head>
+  <body>
+    <h1 id="title">Learners Academy Survey Form</h1>
+    <p id="description">Fill out the following form to help us improve your learning experience.</p>
+    <form id="survey-form">
+      <fieldset id="first">
+        <label id="name-label">Name: <input type="text" id="name" placeholder="e.g. Muhammad Bilal" required></label>
+        <label id="email-label">Email: <input type="email" id="email" placeholder="e.g. name@example.com" required></label>
+        <label id="number-label">Roll #: <input type="number" id="number" min="1" max="100" placeholder="e.g. 50" required></label>
+        <label for="dropdown">What is your future goal?
+          <select id="dropdown">
+            <option>Select any one</option>
+            <option>Engineering/IT</option>
+            <option>Medical Science</option>
+            <option>CA/ACCA</option>
+            <option>Freelancing</option>
+            <option>Teaching</option>
+            <option>Content Creation</option>
+            <option>Launching your own business/startup</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend id="class_label">In which class group are you studying?</legend>
+        <label><input type="radio" name="class" value="primary">Primary (Class I - VIII)</label>
+        <label><input type="radio" name="class" value="secondary" radio="secondary">Secondary (Class IX - X)</label>
+      </fieldset>
+      <label id="improvement_lbl">Which improvements you think should be made?
+      </label> <br>
+      <label><input type="checkbox" value="1">Beginner-friendly language</label>
+      <label><input type="checkbox" value="2">Provision of online resources</label>
+      <label><input type="checkbox" value="3">Focus on skill-building</label>
+      <label><input type="checkbox" value="4">More discussion opportunities</label>
+      <label><input type="checkbox" value="5">Co-curricular activities</label>
+      <label><input type="checkbox" value="6">Practical and conceptual learning</label>
+      <label><input type="checkbox" value="7">Career Counselling</label>
+      <label id="comment_lbl">Other suggestions, comments and improvements?
+        <textarea rows="5" placeholder="Write your comments here..."></textarea>
+      </label>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </body>
+</html>
