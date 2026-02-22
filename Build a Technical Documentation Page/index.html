@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Technical Documentation Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main id="main-doc">
+      <div id="text">
+      <section class="main-section" id="Introduction">
+        <header><h2>Introduction</h2></header>
+        <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.</p>
+        <p>Following are some of the uses of forms:</p>
+        <ul>
+          <li>User Registration and Login</li>
+          <li>Contact and Feedback</li>
+          <li>Search Functionality</li>
+          <li>Data Collection and Submission</li>
+          <li>Online Ordering and E-commerce</li>
+        </ul>
+      </section>
+      <section class="main-section" id="The_&lt_form_&gt_Element">
+        <header><h2>The &lt form &gt Element</h2></header>
+        <p>The HTML &lt form &gt element is used to create an HTML form for user input.</p>
+        <p>The &lt form &gt element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.</p>
+      </section>
+      <section class="main-section" id="The_&lt_input_&gt_Element">
+        <header><h2>The &lt input &gt Element</h2></header>
+        <p>The HTML &lt input &gt element is the most used form element.</p>
+        <p>An &lt input &gt element can be displayed in many ways, depending on the <span class="bold">type</span> attribute.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&lt input type="text" &gt</td>
+              <td>Displays a single-line text input field</td>
+            </tr>
+            <tr>
+              <td>&lt input type="radio" &gt</td>
+              <td>Displays a radio button (for selecting one of many choices)</td>
+            </tr>
+            <tr>
+              <td>&lt input type="checkbox" &gt</td>
+              <td>Displays a checkbox (for selecting zero or more of many choices)</td>
+            </tr>
+            <tr>
+              <td>&lt input type="submit" &gt</td>
+              <td>Displays a submit button (for submitting the form)</td>
+            </tr>
+            <tr>
+              <td>&lt input type="button" &gt</td>
+              <td>Displays a clickable button</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="main-section" id="Text_Fields">
+        <header><h2>Text Fields</h2></header>
+        <p>The &lt input type="text" &gt defines a single-line input field for text input.</p>
+      </section>
+      <section class="main-section" id="The_&lt_label_&gt_Element">
+        <header><h2>The &lt label &gt Element</h2></header>
+        <p>The &lt label &gt tag defines a label for many form elements.</p>
+        <p>The &lt label &gt element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focuses on the input element.</p>
+        <p>The &lt label &gt element also helps users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the &lt label &gt element, it toggles the radio button/checkbox.</p>
+        <p>The for attribute of the &lt label &gt tag should be equal to the id attribute of the &lt input &gt element to bind them together.</p>     
+      </section>
+      <section class="main-section" id="Radio_Buttons">
+        <header><h2>Radio Buttons</h2></header>
+        <p>The &lt input type="radio" &gt defines a radio button.</p>
+        <p>Radio buttons let a user select ONE of a limited number of choices.</p>
+      </section>
+      <section class="main-section" id="Checkboxes">
+        <header><h2>Checkboxes</h2></header>
+        <p>The &lt input type="checkbox" &gt defines a checkbox.</p>
+        <p>Checkboxes let a user select ZERO or MORE options of a limited number of choices.</p>
+      </section>
+      <section class="main-section" id="The_Submit_Button">
+        <header><h2>The Submit Button</h2></header>
+        <p>The &lt input type="submit" &gt defines a button for submitting the form data to a form-handler.</p>
+        <p>The form-handler is typically a file on the server with a script for processing input data.</p>
+        <p>The form-handler is specified in the form's <span class="bold">action</span> attribute.</p>
+      </section>
+      <section class="main-section" id="The_Name_Attribute_for_&lt_input_&gt">
+        <header><h2>The Name Attribute for &lt input &gt</h2></header>
+        <p>Notice that each input field must have a <span class="bold">name</span> attribute to be submitted.</p>
+        <p>If the <span class="bold">name</span> attribute is omitted, the value of the input field will not be sent at all.</p>
+      </section>
+      <section class="main-section" id="Javascript_Variables">
+        <header><h2>Javascript Variables</h2></header>
+        <p>Variables are Containers for Storing Data.</p>
+
+        <p class="bold">Example</p>
+        <code>x = 5;
+y = 6;
+z = x + y;</code> 
+        <p class="bold">Example using var</p>
+        <code>var x = 5;
+var y = 6;
+var z = x + y;</code>
+        <p class="bold">Example using let</p>
+        <code>let x = 5;
+let y = 6;
+let z = x + y;</code> 
+        <p class="bold">Example using const</p>
+        <code>const x = 5;
+const y = 6;
+const z = x + y;</code>
+        <p class="bold">Mixed Example</p>
+        <code>const price1 = 5;
+const price2 = 6;
+let total = price1 + price2;</code> 
+        
+      </section>
+      </div>
+
+      <div id="reference">
+      <nav id="navbar">
+        <header><h1>HTML Forms</h1></header>
+        <p><a href="#Introduction" class="nav-link">Introduction</a></p>
+        <p><a href="#The_&lt_form_&gt_Element" class="nav-link">The &lt form &gt Element</a></p>
+        <p><a href="#The_&lt_input_&gt_Element" class="nav-link">The &lt input &gt Element</a></p>
+        <p><a href="#Text_Fields" class="nav-link">Text Fields</a></p>
+        <p><a href="#The_&lt_label_&gt_Element" class="nav-link">The &lt label &gt Element</a></p>
+        <p><a href="#Radio_Buttons" class="nav-link">Radio Buttons</a></p>
+        <p><a href="#Checkboxes" class="nav-link">Checkboxes</a></p>
+        <p><a href="#The_Submit_Button" class="nav-link">The Submit Button</a></p>
+        <p><a href="#The_Name_Attribute_for_&lt_input_&gt" class="nav-link">The Name Attribute for &lt input &gt</a></p>
+        <p><a href="#Javascript_Variables" class="nav-link">Javascript Variables</a></p>
+      </nav>
+      </div>
+    </main>
+  </body>
+</html>
