@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --green: #009B4D;
+  --yellow: #FFCC00;
+  --ivory: #FAF5E9;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  height: 70px;
+  background-color: var(--green);
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+main {
+  margin-top: 70px;
+}
+#navbar {
+  width: 40%;
+  flex-wrap: wrap;
+  min-width: 390px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--ivory);
+  padding: 2rem 0;
+  border-bottom: solid var(--green);
+  transition: all 0.2s ease;
+}
+.nav-link:active {
+  color: var(--yellow);
+}
+.nav-link:hover {
+  border-bottom: solid var(--ivory);
+  transform: scale(1.09);
+}
+#welcome-section {
+  width: 100%;
+  height: 88vh;
+  overflow: hidden;
+  background-color: ivory;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#welcome-section h1 {
+  font-size: 4rem;
+}
+#welcome-section p {
+  font-weight: bold;
+  color: #555;
+  font-size: 2rem;
+}
+.section-heading {
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  background-color: var(--yellow);
+  color: black;
+}
+#projects {
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem 1rem;
+}
+.project-tile {
+  width: 40%;
+  max-width: 480px;
+  min-width: 210px;
+  border: 2px solid #aaa;
+  border-radius: 1rem;
+  background-color: white;
+}
+.project-name {
+  font-size: 2rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-weight: bold;
+  background: linear-gradient(
+    45deg, 
+    var(--green),
+    var(--ivory)
+  );
+  margin-bottom: 1.6rem;
+  border-radius: 1rem 1rem 0 0;
+}
+#projects a {
+  display: block;
+  text-decoration: none;
+  margin: 0.5rem 1rem;
+  color: black;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.project-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+#contact div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+
+@media (max-width: 550px) {
+  #navbar {
+    width: 100%;
+  }
+  #welcome-section h1 {
+    font-size: 3rem;
+  }
+  .section-heading {
+    font-size: 2.5rem;
+  }
+  .project-tile {
+    width: 70%;
+  }
+}
